@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mariadb:latest
+    container_name: reservation_mysql
+    restart: always
+    environment:
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: 123123
+      MYSQL_DATABASE: boarding-reservation
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
+    driver: local
