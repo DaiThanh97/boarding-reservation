@@ -40,8 +40,6 @@ yarn start:dev
 
 ### 1. Functionalities
 
-### ERD
-
 <p align="center">
   <image src="./imgs/dbdesign.png"/>
 </p>
